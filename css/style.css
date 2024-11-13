@@ -1,0 +1,85 @@
+/* Menu Nav */
+
+.futuristic-menu {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    /* background-color: rgb(255, 255, 255); */
+}
+  
+.futuristic-menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 8rem;
+}
+  
+.futuristic-menu li {
+    margin: 0;
+}
+  
+.futuristic-menu a {
+    text-decoration: none;
+    color: #0affd2; /* Neon cyan color */
+    font-weight: bold;
+    padding: 10px 20px;
+    /* border: 2px solid #0affd2; */
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+  
+.futuristic-menu a::before {
+    /* content: ""; */
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 255, 210, 0.2);
+    transition: left 0.1s ease;
+}
+  
+.futuristic-menu a:hover::before {
+    left: 0;
+}
+  
+.futuristic-menu a:hover {
+    background-color: rgba(10, 255, 210, 0.1);
+    box-shadow: 0 0 10px rgba(10, 255, 210, 0.7);
+}
+
+  
+  /* Fonts and Headers */
+
+h1.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+}  
+
+
+
+*{
+    background-color: rgb(10, 16, 14);
+}
+
+body{
+    color: aliceblue;
+}
+
+h1, h2, h3{
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
+    
+}
+
+p{
+    color: rgb(209, 255, 209);
+    margin-bottom: 5rem;
+}

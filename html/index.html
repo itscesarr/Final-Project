@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Music Taste Website</title>
+
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="futuristic-menu">
+        <ul>
+          <li><a href="#"> < Home </a></li>
+          <li><a href="#">Play Lists ></a></li>
+          <li><a href="#">Music ></a></li>
+          <li><a href="#">Recommend ></a></li>
+          <li><a href="#">About ></a></li>
+          <li><a href="#">Player ></a></li>
+        </ul>
+      </nav>
+
+    <div>
+        <h1 class="righteous-regular">College Playlists</h1>
+        <p>Hello World. My name is Cesar, I am a senior at the University of Michigan studying at Stamps and UMSI.
+            This website is a tribute to all the music and playlists that I have listened too throughout my time
+            in college. Now that I am at my last stretch, I wonder if my music would help others, just as it helped
+            me. Hope you like it!
+        </p>
+    </div>
+
+    <div>
+        <h2>Music is Therapy</h2>
+        <p>I believe that music has a power that provide sustinance in every occassion––good or bad. My goal is to
+            provide as much music as possible in hopes that I could deliver that sense of refuge for students
+            looking for a method to cope from an endless stress from school, work and commitments.
+        </p>
+    </div>
+
+    <div>
+        <h2>Want to send me music?</h2>
+        <p>If you think your music taste can leave an impact, please send your favorite my way! Fill out the form
+            below to along with your school you attend:
+        </p>
+    </div>
+
+ <form action="https://formspree.io/f/mldedgva" method="POST">
+  <fieldset>
+    <legend></legend>
+    <label for="Your Name">Name</label>
+    <input name="text" placeholder="Enter Your Name" type="name"></input>
+
+    <label for="Favorite Song">Favorite Song</label>
+    <input name="song" placeholder="Favorite song" type="song"></input>
+
+    <label for="Favorite Song">Playlist Link</label>
+    <input name="song" placeholder="Playlist" type="song"></input>
+
+    <label for="date">Date</label>
+    <input type="date" name="date" id="date">
+
+    <label for="text">Leave a message</label>
+    <textarea name="text" id="text"></textarea>
+
+    <label for="rememeber me">Remember me</label>
+    <input type="checkbox" name="Remember me" id="Remember me">
+
+
+    <input type="submit" value="submit">
+    
+  </fieldset>
+ </form>
+</body>
+</html>
