@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     margin: 20px;
-    /* background-color: rgb(255, 255, 255); */
 }
   
 .futuristic-menu ul {
@@ -20,7 +19,7 @@
   
 .futuristic-menu a {
     text-decoration: none;
-    color: #0affd2; /* Neon cyan color */
+    color: #ffffff; /* Neon cyan color */
     font-weight: bold;
     padding: 10px 20px;
     /* border: 2px solid #0affd2; */
@@ -37,49 +36,121 @@
     left: 100%;
     width: 100%;
     height: 100%;
-    background: rgba(10, 255, 210, 0.2);
+    background: rgb(255, 255, 255);
     transition: left 0.1s ease;
 }
   
 .futuristic-menu a:hover::before {
     left: 0;
+    background: rgb(98, 255, 0);
+    
+
 }
   
 .futuristic-menu a:hover {
-    background-color: rgba(10, 255, 210, 0.1);
-    box-shadow: 0 0 10px rgba(10, 255, 210, 0.7);
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+
 }
 
   
   /* Fonts and Headers */
 
-h1.righteous-regular {
-    font-family: "Righteous", sans-serif;
+
+h1.major-mono-display-regular {
+    font-family: "Major Mono Display", monospace;
     font-weight: 400;
     font-style: normal;
     font-size: 4rem;
     display: flex;
     justify-content: center;
-}  
+    margin-top: 15rem;
+  }
+
+header.major-mono-display-regular{
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: #ffffff;
+
+}
 
 
 
-*{
-    background-color: rgb(10, 16, 14);
+.background-image {
+    background-image: url("../images/background1.jpg");
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image */
+    height: 700px; /* You can adjust the height as needed */
+    text-align: center;
+    margin-bottom: 3rem;
+
 }
 
 body{
-    color: aliceblue;
+    background-color: rgb(12, 15, 13);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3{
     color: rgb(255, 255, 255);
     justify-content: center;
     display: flex;
-    
+    background-color: none;
+    font-family: "Major Mono Display", monospace;
+
 }
 
 p{
     color: rgb(209, 255, 209);
+    margin: 20px;
     margin-bottom: 5rem;
 }
+
+footer{
+
+
+    color: rgb(255, 255, 255);
+
+
+    h4{
+        justify-content: center;
+        font-size: 12px;
+        display: flex;
+        background-color: black;
+        padding: 1rem;
+        margin: 0px;
+    }
+
+
+}
+
+.content-container {
+    display: flex; /* Enable flexbox */
+    justify-content: space-between; /* Add space between text and player */
+    align-items: center; /* Vertically align items */
+    gap: 20px; /* Add spacing between text and player */
+    padding: 20px; /* Optional padding around the container */
+}
+
+.text-container {
+    flex: 1; /* Make text container flexible */
+    max-width: 50%; /* Limit maximum width */
+    font-family: 'Righteous', sans-serif; /* Apply font */
+    line-height: 1.6; /* Improve readability */
+    font-family: "Major Mono Display", monospace;
+}
+
+.embed-container {
+    flex: 1; /* Make player container flexible */
+    max-width: 50%; /* Limit maximum width */
+    font-family: "Major Mono Display", monospace;
+    line-height: 1.6; /* Improve readability */
+
+}
+
+

@@ -4,6 +4,8 @@ body {
   
   form {
     border: 3px solid #f1f1f1;
+    border-width: 0px
+
   }
   
   legend{ 
@@ -17,6 +19,7 @@ body {
     display: inline-block;
     margin-right:10px;
     width:15%;
+    color: white;
   }
   input {
     width: 100%;
@@ -50,7 +53,7 @@ body {
   }
   
   input[type=submit] {
-    background-color: rgba(10, 255, 210, 0.491);;
+    background-color: rgba(10, 255, 210, 0.491);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -68,7 +71,7 @@ body {
   } */
 
   input[type="date" i] {
-    color: #ffffff;
+    color: #787878;
     font-family: monospace;
     padding-inline-start: 1px;
     cursor: default;
@@ -93,7 +96,7 @@ body {
     textarea{
       width:80%;
       height: 25vh;
-      color: rgba(10, 255, 210, 0.7);
+      color: rgba(30, 96, 84, 0.7);
    }
    
    div + label{
@@ -101,3 +104,10 @@ body {
       vertical-align:top;
    }
   }
+
+
+  fieldset, legend, input{
+    border-radius: 2rem;
+  }
+
+  
