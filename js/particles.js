@@ -1,6 +1,6 @@
   particlesJS("particles-js", {
     particles: {
-      number: { value: 20 },
+      number: { value: 10 },
       color: { value: "#ffffff" },
       shape: { type: "circle" },
       size: { value: 3, random: true },
