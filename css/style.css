@@ -1,0 +1,393 @@
+.futuristic-menu {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.futuristic-menu ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  /* Small gap between items */
+}
+
+.futuristic-menu li {
+  margin: 0;
+}
+
+.futuristic-menu a {
+  text-decoration: none;
+  color: #ddd;
+  /* Subtle grey color for text */
+  font-weight: 400;
+  font-size: 16px;
+  padding: 12px 24px;
+  position: relative;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  /* Pointer cursor to indicate interaction */
+}
+
+.futuristic-menu a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  /* Smooth scale-in effect */
+  font-size: 20px;
+  color: #ddd;
+  /* Default grey color for the arrow */
+  opacity: 0;
+  /* Initially hidden */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.futuristic-menu a:hover {
+  color: #03ff5f;
+  /* Change text color on hover to neon cyan */
+  transform: scale(1.2);
+  /* Smooth scale-in effect */
+
+}
+
+.futuristic-menu a:hover::after {
+  opacity: 1;
+  /* Make it visible */
+  transform: translateY(-50%) scale(1);
+  /* Smooth scale-in effect */
+  color: #00ff73;
+  /* Neon cyan for the arrow */
+  right: 10px;
+  /* Move the arrow closer to the text */
+}
+
+
+
+/* Fonts and Headers */
+
+
+h1.major-mono-display-regular {
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+}
+
+header.major-mono-display-regular {
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  color: #ffffff;
+
+}
+
+
+
+.background-image {
+  background-image: url("../images/background1.jpg");
+  background-size: cover;
+  /* Ensures the image covers the container */
+  background-position: center;
+  /* Centers the image */
+  height: 700px;
+  /* You can adjust the height as needed */
+  text-align: center;
+  margin-bottom: 3rem;
+
+}
+
+body {
+  background-color: rgb(12, 15, 13);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  display: flex;
+  background-color: none;
+  font-family: "Major Mono Display", monospace;
+
+}
+
+p {
+  color: rgb(209, 255, 209);
+  margin: 20px;
+  margin-bottom: 4rem;
+  font-family: "Major Mono Display", monospace;
+
+}
+
+
+
+footer {
+
+
+  color: rgb(255, 255, 255);
+
+
+  h4 {
+    justify-content: center;
+    font-size: 12px;
+    display: flex;
+    background-color: black;
+    padding: 1rem;
+    margin: 0px;
+  }
+
+
+}
+
+.content-container {
+  display: flex;
+  /* Enable flexbox */
+  justify-content: space-between;
+  /* Add space between text and player */
+  align-items: center;
+  /* Vertically align items */
+  gap: 20px;
+  /* Add spacing between text and player */
+  padding: 20px;
+  /* Optional padding around the container */
+}
+
+.text-container {
+  flex: 1;
+  /* Make text container flexible */
+  max-width: 50%;
+  /* Limit maximum width */
+  font-family: 'Righteous', sans-serif;
+  /* Apply font */
+  line-height: 1.6;
+  /* Improve readability */
+  font-family: "Major Mono Display", monospace;
+}
+
+.embed-container {
+  flex: 1;
+  /* Make player container flexible */
+  max-width: 50%;
+  /* Limit maximum width */
+  font-family: "Major Mono Display", monospace;
+  line-height: 1.6;
+  /* Improve readability */
+
+}
+.fullscreen{
+  flex: 1;
+  /* Make player container flexible */
+  max-width: 100%;
+  /* Limit maximum width */
+  font-family: "Major Mono Display", monospace;
+  line-height: 1.6;
+
+}
+
+
+img {
+  display: flex;
+  /* Enable flexbox */
+  justify-content: space-between;
+  /* Add space between text and player */
+  align-items: center;
+  /* Vertically align items */
+  gap: 20px;
+  /* Add spacing between text and player */
+  padding: 20px;
+  /* Optional padding around the container */
+}
+
+.icons-container {
+  text-align: center;
+  /* Centers the icons */
+  margin-top: 10px;
+
+  font-size: 24px;
+  /* Adjust icon size */
+  margin: 0 10px;
+  /* Adds spacing between icons */
+  color: #0077b5;
+  /* Example color for LinkedIn icon */
+  cursor: pointer;
+  /* Makes icons clickable */
+}
+
+.icons-container i:hover {
+  color: #c7d1d6;
+  /* Changes color on hover */
+}
+
+
+
+
+
+button {
+  position: relative;
+  overflow: hidden;
+  background: #42455a;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  font-size: 10px;
+  color: #e0ffff;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 1;
+  left: 47%;
+  margin-bottom: 2rem;
+  font-family: "Major Mono Display", monospace;
+ 
+  display: flex;
+ align-items: center;
+  text-decoration: none;
+
+}
+
+button:active {
+  transform: scale(0.95);
+  
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  inset: -1px 30px;
+  background: #3dff4a;
+  transition: 500ms;
+  animation: rotate 4s linear infinite;
+  z-index: -1;
+  
+}
+
+button:hover::before {
+  inset: -1px;
+  
+  
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: #22232e;
+  z-index: -1;
+  
+}
+
+button:hover a {
+  content: "";
+  position: relative;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  transition: 0.1s ease;
+
+
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 592px) {
+  body {
+
+    .futuristic-menu {
+      display: contain;
+      justify-content: center;
+      margin: 20px;
+    }
+
+  }
+
+  .futuristic-menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: contain;
+    gap: 3 rem;
+  }
+
+
+  .futuristic-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    /* Neon cyan color */
+    font-weight: bold;
+    padding: 10px 20px;
+    /* border: 2px solid #0affd2; */
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .futuristic-menu li {
+    margin: auto;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+/* General Styling (default for smallest screens) */
+
+
+/* Breakpoint for small devices (min-width: 480px) */
+@media screen and (min-width: 320px) {
+  .futuristic-menu ul {
+    gap: 4rem;
+
+  }
+
+  .futuristic-menu a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  h1.major-mono-display-regular {
+    font-size: 2rem;
+  }
+
+  background-image {
+    display: inherit;
+  }
+
+}
+
+/* Breakpoint for tablets (min-width: 768px) */
+@media screen and (min-width: 768px) {
+  .futuristic-menu ul {
+    gap: 5rem;
+  }
+
+  h1.major-mono-display-regular {
+    font-size: 3.5rem;
+  }
+
+  .content-container {
+    flex-direction: row;
+    /* Ensure horizontal layout */
+    padding: 40px;
+  }
+}

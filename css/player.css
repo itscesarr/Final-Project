@@ -1,0 +1,73 @@
+.song-list-container {
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    border-radius: 5px;
+
+}
+
+.song {
+    min-width:-webkit-fill-available;
+    margin-bottom: .8rem;
+    padding: .8rem 1rem;
+    border-radius: 10px;
+    border: 0;
+    background: #191414;
+    color: #ffffff;
+    cursor: pointer;
+
+        display: block;
+        text-decoration: none;
+   
+        margin-bottom: 8px;
+        transition: color 0.3s ease;
+        font-size: medium;
+    }
+
+.song:hover {
+    background: #1Db954;
+    cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+ transform: scale(1.1); /* Slightly increase size */
+color: #000000;
+}
+
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+
+}
+
+.embed-container,
+.songs {
+    flex: 1;
+}
+
+.songs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.songs button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+iframe{
+    margin-top: 6rem;
+}
+/* @media screen and (max-width: 400px) {
+          body {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+          }
+        } */
+
+
+/* for leslie
+255 181 207 */
